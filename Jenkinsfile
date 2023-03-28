@@ -11,7 +11,7 @@ node('master') {
         sh 'sum=0;for i in {1..100}; do echo sum=$((sum+i)); echo ${sum} ;done'
     }
 
-    stage('stage3: copy to target host and calculations'){
+    stage('stage3: copy to target host and calculations '){
         // sh "scp -r ${WORKSPACE}/backend/* root@172.26.129.143:/opt/test-platform/test-platform/backend/"
         echo "copy to target host"
         sh 'sum=0;for i in {1..100}; do echo sum=$((sum+i)); echo ${sum} ;done'
