@@ -8,7 +8,8 @@ node('master') {
     stage('stage2: and delete old versions and calculations') {
         // sh "rm -rf ${WORKSPACE}@script/*/migrations"
         echo "copy and delete old versions"
-        sh "sum=0;for i in {1..100}; do echo sum=$((sum+i)); echo ${sum} ;done"
+        sh 'sum=0;for i in {1..100}; do echo sum=$((sum+i)); echo ${sum} ;done'
+
     }
 
     stage('stage3: copy to target host and calculations'){
